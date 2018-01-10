@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: j/uO+h6O2yhS1hKR6VKtA+qqxmqQXb91MveI9pVTJzvWQ3rvUs+65g/ptfNNOXykyIEiK6S/viP98073czW5tB39cOEvjDPe1rmyhR/OrsKI+gkL0oY1LjOK87pU8PQnUThTB30omnW2S9MupjqC31YB2fZjjCmW5qNwJ2pR6RTI+rOvx9kQ9Pkvar7mykXHOxLukqJhLdK4/k/JPgYW8qU9qURdpFv79Xqoy8CiYts24qThqxNwBcmuTMV1RjktBjxOUS5EhQ7mb7ZXHsKJiYwg1k9/3jmGvYBrK158bsLTX8plAqFrkzZYErebuwc7uz6vvkdYQXrGWNcsa3P82FEB2hvi46xZj+xJTeTDCigyzyEpJL1OXHUwDiuMoNxxrLor4YjToNlXtgyUfoA2ZIVqjWmSebzEQzSb97JoSlv3ab86l31libm8YhA5hHndVtDTpStTpy+Vhm3a8QdLqjJ0c9Dgzo/gN3ypD+beb5Zrh+Ap3+0J9iyXrRAu+ZJ8Tu3XolD07YpEjMbbmEIMdzHOznYTTFbme90jS6PeSU8E/oyMJ6PpZUO5AX0d6vLYJCgUoJ55I5g4fvFXb2fZWFE/IfC6I/u61G7Eb8cRJJmtAisbjgubOahzfKSDZieN1OnU/lJDyc9OjX4VX8wlMjNlWpid+OIRPIIx8tPany8=
+  app: shrouded-basin-56105
+  on:
+    repo: brianlpham21/node-restaurants-app-mongoose
+    branch: feature/with-tests
